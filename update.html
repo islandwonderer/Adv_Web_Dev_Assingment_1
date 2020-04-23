@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="update.css" type="text/css" />
+    <!-- <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/update.css"> -->
+    <title>Update</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <header class="header">
+          <ul>
+            <li>Image</li>
+            <li>Logo</li>
+            <li><a class="current" href="update.html">Update</a></li>
+            <li><a href="friends.html">Friends</a></li>
+          </ul>
+        </header>
+      </div>
+      <div id="status-container">
+        <h2>Status</h2>
+        <textarea class="status-input" id="status-input" maxlength="200">
+        </textarea>
+        <button type="submit" class="btn" onclick="updateStatus()">
+          Submit
+        </button>
+      </div>
+
+      <script type="text/javascript" src="controller.js"></script>
+    </div>
+  </body>
+</html>

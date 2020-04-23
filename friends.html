@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="friends.css" type="text/css" />
+    
+    <title>Feed</title>
+  </head>
+
+<body>
+    <div>
+        <div class="container">
+            <header class="header">
+                <ul>
+                    <li>Image</li>
+                    <li>Logo</li>
+                    <li><a class="current" href="feed.html">Update</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <div id="status" class="status-container">
+           
+                <article class="card">
+                    <img id="photo"
+                    src="ramses.jpeg" alt=""
+                    ></img>
+                </article>
+
+                <article class="card">
+                    <div class="right-card">
+                        <div class="top-row">
+                            <h4>name</h4>
+                            <h4>date</h4>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="middle-row">
+                            <p id="status_area">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+                            natoque penatibus et magnis dis parturient montes, nascetur 
+                            ridiculus mus. Donec qu</p>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="likes-row">
+                            <p id="likes">___Likes</p>
+                            <button
+                            type="submit"
+                            id="like_button"
+                            class="btn"
+                            onclick="updateStatus()">
+                            Like</button>
+                        </div>
+                    </div>
+                </article>
+           
+        </div>
+        <script type="text/javascript" src="controller.js"></script>
+    </div>  
+</body>
+</html>

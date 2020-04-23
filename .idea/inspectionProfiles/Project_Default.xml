@@ -1,0 +1,16 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="IJVS0001" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="IJVS0002" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="IJVS0003" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="IJVS0004" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="IJVS0005" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="XPST0017" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="XPST0081" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="XQST0031" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="XQST0033" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="XQST0047" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="XQST0118" enabled="true" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>
