@@ -74,6 +74,18 @@
       "timestamp": "23-Apr-2020 (14:58:09.182323)",
       "status": "        This is a test of what is going on.",
       "likes": []
+    },
+    {
+      "timestamp": "23-Apr-2020 21:36:15.622163",
+      "status": "this is the state of the nation",
+      "likes": []
+    },
+    {
+      "timestamp": "23-Apr-2020 21:44:49.199135",
+      "status": "This is awsome. This is working also.",
+      "likes": [
+        "127.0.0.1"
+      ]
     }
   ]
 }

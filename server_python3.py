@@ -5,9 +5,9 @@ import json
 import datetime
 import requests
 
-serverSocket = socket(AF_INET, SOCK_STREAM)
-
 serverPort = 8080
+
+serverSocket = socket(AF_INET, SOCK_STREAM)
 
 serverSocket.bind(("", serverPort))
 
@@ -27,7 +27,7 @@ def download_pictures(name, ip, file_name):
 def add_status(status):
     j_obj = get_json("status.json")
     t_stamp = datetime.datetime.now()
-    new_update = {"timestamp": t_stamp.strftime("%d-%b-%Y (%H:%M:%S.%f)"), "status": status, "likes": []}
+    new_update = {"timestamp": t_stamp.strftime("%d-%b-%Y %H:%M:%S.%f"), "status": status, "likes": []}
     j_obj["updates"].append(new_update)
     save_json("status.json", j_obj)
 
@@ -39,6 +39,8 @@ def parse_filename_request(filename):
             command_list = filename[1].split("&")
         else:
             command_list = [filename[1]]
+    elif "&" in filename:
+        command_list = filename.split("&")
     else:
         command_list = [filename]
 
@@ -74,10 +76,12 @@ def create_feed_json():
         status = r.json()
         recent_status = status["updates"][-1]
         name = friend["name"]
+        likes = len(recent_status["likes"])
+        date, feed_id = recent_status["timestamp"].split()
         feed_update["friends_updates"].append({"picture": file_name, "name": name,
-                                               "timestamp": recent_status["timestamp"],
+                                               "timestamp": date,
                                                "status": recent_status["status"],
-                                               "likes": recent_status["likes"]})
+                                               "likes": likes, "feed_id": feed_id})
     return feed_update
 
 
@@ -123,7 +127,7 @@ def process_get(m_split, addr):
     return response
 
 
-def process_put(m_split):
+def process_put(m_split, addr):
     filename = m_split[0]
     filename = filename[1:]
     # # print(filename)
@@ -135,13 +139,26 @@ def process_put(m_split):
         add_status(toSave)
 
     if "updatelikes" in request_dict:
-        my_status_feed = get_json("status.json")
-        complete_ip = "http://" + m_split[3]
-        for status in my_status_feed["updates"]:
-            if request_dict["date"] == status["timestamp"]:
-                if complete_ip not in status["likes"]:
-                    status["likes"].append(complete_ip)
-        save_json("status.json", my_status_feed)
+        if request_dict["updatelikes"] == "req":
+            my_status_feed = get_json("status.json")
+            complete_ip = addr[0]
+            for status in my_status_feed["updates"]:
+                feed_id = status["timestamp"].split()[1]
+                print("local feed_id", feed_id)
+                print("incoming feed_id", request_dict["feed_id"])
+                if request_dict["feed_id"] == feed_id:
+                    if complete_ip not in status["likes"]:
+                        status["likes"].append(complete_ip)
+            save_json("status.json", my_status_feed)
+        else:
+            my_friends = get_json("friends.json")
+            print(request_dict)
+            for friend in my_friends["friends"]:
+                print("checking my friends")
+                curr_friend = urllib.parse.unquote(request_dict["friend_name"])
+                if friend["name"] == curr_friend:
+                    print("I have a friend")
+                    requests.put(friend["ip_address"]+"?updatelikes=req&feed_id=" + request_dict["feed_id"])
 
     response = b"HTTP/1.1 200 OK\r\n\r\n"
     return response
@@ -152,13 +169,13 @@ def process(connectionSocket, address):
         # Receives the request message from the client
         message = connectionSocket.recv(1024)
         m_split = message.decode(encoding='UTF-8').split()
-        # print(m_split)
+        print(m_split)
         response = ""
         method = m_split[0]
         if method == "GET":
             response = process_get(m_split[1:], address[0])
         elif method == "PUT":
-            response = process_put(m_split[1:])
+            response = process_put(m_split[1:], address)
         connectionSocket.send(response)
         connectionSocket.close()
 

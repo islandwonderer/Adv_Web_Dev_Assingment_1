@@ -1,7 +1,3 @@
-let date;
-let name;
-let content;
-let template = ``;
 
 function updateStatus() {
     let text = document.getElementById("status-input").value;
@@ -40,8 +36,57 @@ function friendsUpdate() {
         console.warn(err);
         return
         }
-        console.log(data)
-        document.getElementById("feed").innerHTML = "<h1>" + data.friends_updates[0].name + "</h1><br>";
-        
+        let load = "";
+        for(let i in data.friends_updates) {
+            console.log(data.friends_updates[i]);
+            let friend = data.friends_updates[i];
+            console.log(friend.picture)
+            load += `<div class="status-container">
+                   
+                    <article class="card">
+                        <img src="${friend.picture}" alt=""></img>
+                    </article>
+    
+                    <article class="card">
+                        <div class="right-card">
+                            <div class="top-row">
+                                <h4>${friend.name}</h4>
+                                <h4>${friend.timestamp}</h4>
+                            </div>
+                        </div>
+    
+                        <div class="right-card">
+                            <div class="middle-row">
+                                <p>${friend.status}</p>
+                            </div>
+                        </div>
+    
+                        <div class="right-card">
+                            <div class="likes-row">
+                                <p id="${friend.feed_id}">${friend.likes} Likes</p>
+                                <button
+                                type="submit"
+                                id="like_button"
+                                class="btn"
+                                onclick="updateLike('${friend.feed_id}', '${friend.name}')">
+                                Like</button>
+                            </div>
+                        </div>
+                    </article>
+            </div>`
+        };
+        console.log(load)
+        document.getElementById("content").innerHTML = load;
+
         });
+    }
+
+    function updateLike(id, name) {
+        console.log(id)
+        const xmlhttp = new XMLHttpRequest();
+        let url = "updatelikes=func&feed_id="+id+"&friend_name="+name;
+        xmlhttp.open("PUT", url, true);
+        xmlhttp.send();
+        location.reload()
+
     }
