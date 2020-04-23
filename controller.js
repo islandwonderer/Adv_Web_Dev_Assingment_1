@@ -1,5 +1,6 @@
 
 function updateStatus() {
+    // Sends request to server update the user's status with the information provided.
     let text = document.getElementById("status-input").value;
     const xmlhttp = new XMLHttpRequest();
     let url = "updatestatus="+text;
@@ -9,26 +10,24 @@ function updateStatus() {
 }
 
 function getJson(url, callback) {
+    // this function retires and parses json file, it uses a call back in order to assure that file requested
+    // is available before proceeding
     const xmlhttp = new XMLHttpRequest();
-    
-    xmlhttp.onreadystatechange = function() {
+    xmlhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-        try {
-            const data = JSON.parse(this.responseText);
-            callback(null, data);
-        }
-        catch(err) {
-            callback(err);
-        }
-        }
-        else {
-        callback(new Error("Sorry something went wrong with your request, try again later."))
+            try {
+                const data = JSON.parse(this.responseText);
+                callback(null, data);
+            } catch (err) {
+                callback(err);
+            }
+        } else {
+            callback(new Error("Sorry something went wrong with your request, try again later."))
         }
     };
-    
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
-    }
+}
 
 function friendsUpdate() {
     getJson("friends.html?update_feed=true", (err, data) => {
@@ -36,11 +35,12 @@ function friendsUpdate() {
         console.warn(err);
         return
         }
+        // Loads data for each friend into the web page
         let load = "";
         for(let i in data.friends_updates) {
-            console.log(data.friends_updates[i]);
             let friend = data.friends_updates[i];
-            console.log(friend.picture)
+            // assembled html includes function with unique identifier for future likes
+            // the chances that two friends with the same name posted at the same time down to 5 dec points very small
             load += `<div class="status-container">
                    
                     <article class="card">
@@ -75,13 +75,13 @@ function friendsUpdate() {
                     </article>
             </div>`
         };
-        console.log(load)
         document.getElementById("content").innerHTML = load;
 
         });
     }
 
     function updateLike(id, name) {
+        // Sends request to server to update friend likes
         console.log(id)
         const xmlhttp = new XMLHttpRequest();
         let url = "updatelikes=func&feed_id="+id+"&friend_name="+name;
