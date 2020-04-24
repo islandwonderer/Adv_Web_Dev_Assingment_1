@@ -13,8 +13,10 @@
     <list default="true" id="534c9ad4-f891-4b6a-b427-b80d78f65c10" name="Default Changelist" comment="git ignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/friends.css" beforeDir="false" afterPath="$PROJECT_DIR$/friends.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/friends.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/update.css" beforeDir="false" afterPath="$PROJECT_DIR$/update.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wisprhorz.png" beforeDir="false" afterPath="$PROJECT_DIR$/wisprhorz.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +159,7 @@
       <workItem from="1587637269657" duration="604000" />
       <workItem from="1587679142041" duration="180000" />
       <workItem from="1587680500155" duration="2409000" />
+      <workItem from="1587699540135" duration="3045000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first commit.">
       <created>1587616033871</created>
@@ -179,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587637360691</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working on CSS and HTML">
+      <created>1587694473833</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587694473833</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +214,8 @@
     <MESSAGE value="This is the first commit." />
     <MESSAGE value="git ignore" />
     <MESSAGE value="Working model, needs more tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working model, needs more tests." />
+    <MESSAGE value="working on CSS and HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on CSS and HTML" />
   </component>
   <component name="WindowStateProjectService">
     <state x="459" y="122" key="#Intentions" timestamp="1587693294620">
@@ -284,10 +295,10 @@
       <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="639" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.956@0.23.1680.956" timestamp="1587637390507" />
-    <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog" timestamp="1587692093768">
+    <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog" timestamp="1587700115990">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587692093768" />
+    <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587700115990" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Assignment_1$server_python3.coverage" NAME="server_python3 Coverage Results" MODIFIED="1587681191430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

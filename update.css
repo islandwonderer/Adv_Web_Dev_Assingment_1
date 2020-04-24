@@ -22,35 +22,34 @@ header:before {
     z-index: -1;
 }
 
-.header  ul {
+.header ul {
     position: sticky;
     top: 0;
     background: #b8a9c9;
     width: 100vw;
     height: 10vh;
 }
-.container .header ul li {
+.header ul li  {
     display: inline-flex;
 
-    padding-top: 2rem;
-    padding-left: 3rem;
 }
-.container .header #logo {
-    /*float: left;*/
-    width: 10px;
-    height: 8px;
-}
-.header ul li:first-child {
-    padding-left: 75%;
-}
+.header img {
 
-.header ul li:last-child {
+    height: 80px;
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+}
+.header ul li:nth-child(2) {
     float: right;
-    padding-right: 5%;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
 }
-
+.header ul li:nth-child(3) {
+    float: right;
+    padding-top: 2rem;
+    padding-right: 1rem;
+}
 #status-container {
-    
     width: 90%;
     padding: 4rem 0rem;
     border: 4px double #622569;
@@ -62,7 +61,6 @@ header:before {
     margin-right: auto;
     opacity: .96;
     box-shadow: 4px 4px 4px #622569;
-   
 }
 
 #status-container h2 {
@@ -72,6 +70,7 @@ header:before {
     margin-top: 0.2rem;
    
 }
+
 #status-container .status-input {
      display: block;
     
@@ -83,6 +82,7 @@ header:before {
     margin: auto auto;
     width: 70%; 
 }
+
 .btn {
     /* display: inline-block; */
     margin-left: 65%;
