@@ -11,8 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="534c9ad4-f891-4b6a-b427-b80d78f65c10" name="Default Changelist" comment="git ignore">
+      <change afterPath="$PROJECT_DIR$/assembly.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_python3.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_python3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Base_Model" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,10 +56,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -155,6 +156,7 @@
       <workItem from="1587637269657" duration="604000" />
       <workItem from="1587679142041" duration="180000" />
       <workItem from="1587680500155" duration="2409000" />
+      <workItem from="1587683963360" duration="3262000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first commit.">
       <created>1587616033871</created>
@@ -177,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587637360691</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="removed debug staments from contoller.js and added comments">
+      <created>1587684708544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587684708544</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +211,8 @@
     <MESSAGE value="This is the first commit." />
     <MESSAGE value="git ignore" />
     <MESSAGE value="Working model, needs more tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working model, needs more tests." />
+    <MESSAGE value="removed debug staments from contoller.js and added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed debug staments from contoller.js and added comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="529" y="222" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587615124419">

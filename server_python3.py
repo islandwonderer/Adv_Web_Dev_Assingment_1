@@ -16,6 +16,8 @@ print('The server is running')
 
 
 def download_pictures(name, ip, file_name):
+    # TODO: verify file exist and or use cache check request documentation for has change
+    # called from: get_feed_json:process_put
     name = name.split()
     save_file = name[0] + "_" + name[1] + "_" + file_name
     pic = requests.get(ip + file_name)
@@ -25,6 +27,7 @@ def download_pictures(name, ip, file_name):
 
 
 def add_status(status):
+    # called from process_put
     j_obj = get_json("status.json")
     t_stamp = datetime.datetime.now()
     new_update = {"timestamp": t_stamp.strftime("%d-%b-%Y %H:%M:%S.%f"), "status": status, "likes": []}
@@ -33,6 +36,7 @@ def add_status(status):
 
 
 def parse_filename_request(filename):
+    # called from process_get, process_put
     if "?" in filename:
         filename = filename.split("?")
         if "&" in filename[1]:
@@ -53,6 +57,7 @@ def parse_filename_request(filename):
 
 
 def get_json(filename):
+    # called from add_status:process_put, create_json_feed:process_get, check_fof:process_get, process_get
     with open(filename, "r") as file:
         j_obj = json.load(file)
     return j_obj
@@ -64,6 +69,7 @@ def save_json(filename, json_obj):
 
 
 def create_feed_json():
+    # called from: process_get
     # open local lists of friends
     dic_friends = get_json("friends.json")
     # create a dictionary
@@ -86,6 +92,7 @@ def create_feed_json():
 
 
 def check_fof(ip):
+    #  called from: process_get
     friends_list = get_json("friends.json")
 
     for friend in friends_list["friends"]:
@@ -96,6 +103,7 @@ def check_fof(ip):
 
 
 def process_get(m_split, addr):
+    # parts of get process: check_fof, update feed, create_feed_json(), parse_filename_request()
     filename = m_split[0]
     friend_or_foe = check_fof(addr)
     # print(friend_or_foe)
