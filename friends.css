@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +6,6 @@
     max-height: 100vh;
     /*  colors are
     #5b9aa0, #d6d4e0, #b8a9c9, #622569*/
-    
 }
 
 header:before {
@@ -29,6 +27,7 @@ header:before {
     width: 100vw;
     height: 10vh;
 }
+
 .header ul li {
     display: inline-flex;
     width: 24%;
@@ -37,7 +36,6 @@ header:before {
 }
 
 /* body */
-
 
 .status-container   {
     width: 90%;
@@ -52,8 +50,7 @@ header:before {
     height: 27vh;
     grid-template-columns: 130px auto;
     box-shadow: 4px 4px 4px #622569;
-    padding: 1rem 1rem;
-} 
+}
 
 .card {
     padding: 0.5rem;
@@ -63,18 +60,19 @@ header:before {
     z-index: 1;
     width: 100%;
     height: 20vh;
-
 }
+
 .top-row {
     width: 100%;
     height: 1rem;
-    padding: 0rem 0rem;
+    padding: 0;
     margin-bottom: 0.5rem;
-    
 }
+
 .top-row h4:first-child {
     float: left;
 }
+
 .top-row h4:last-child {
     float: right;
 }
@@ -86,15 +84,14 @@ header:before {
     line-height: 1.4;
     margin-bottom: 1rem;
     margin-top: 1rem;
-   
-   
 }
+
 .likes-row {
    
     padding: 0.5rem 0.5rem;
     font-size: 0.75rem;
-
 }
+
 .likes-row p {
     display: inline-block;
     text-align: center;
@@ -104,39 +101,19 @@ header:before {
     float: right;
     border: 2px solid black;
     color: black;
-    padding 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     width: 2rem;
     height: 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .btn:hover {
     color: #e71d1d;
     background: #446190;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #status-container {
-   
     /* above is for left-box
     and right-box */
     width: 90%;
@@ -149,19 +126,15 @@ header:before {
     margin-right: auto;
     opacity: .96;
     box-shadow: 4px 4px 4px #622569;
-    
 }
+
 .status-container .left-box img {
     margin: auto;
-   
     border: 3px solid black; 
     width: 25%;
-    
 }
-.right-box  {
-    
 
-    
+.right-box  {
     /* above is for name-date
     and status and likebutton */
    width: 45%;
@@ -170,48 +143,38 @@ header:before {
     border-radius: 7px;
     border: 5px solid #622569;
     height: 25px;
-    
-    
 }
 
 .right-box ul li {
-    
     display: inline-flex;
     width: 50%;
     font-size: 1.5rem;
     color: black;
-    
-    
-    
-} 
+}
+
 #status {
     background-color: lightgrey;
     border: 3px solid black;
 }
 
-
-
-
 #likebutton #likes {
     border-bottom: 2px solid black;
-    width 5px;
+    width: 5px;
 }
 
-
 .like_button {
-   
     margin-left: 65%;
     margin-top: 1rem;
     border: 2px solid black;
     text-align: center;
     font-size: 1rem;
-    padding: auto auto;
+    padding: 2px;
     border-radius: 5px;
     width: 20%;
     background: #d6d4e0;
     box-shadow: 2px 2px 2px black;
     height: 2rem;
-}*/
+}
 
 
 

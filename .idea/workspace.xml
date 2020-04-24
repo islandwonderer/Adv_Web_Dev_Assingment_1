@@ -11,9 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="534c9ad4-f891-4b6a-b427-b80d78f65c10" name="Default Changelist" comment="git ignore">
-      <change afterPath="$PROJECT_DIR$/assembly.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_python3.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_python3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/friends.css" beforeDir="false" afterPath="$PROJECT_DIR$/friends.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update.css" beforeDir="false" afterPath="$PROJECT_DIR$/update.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="refactor_branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,7 +157,6 @@
       <workItem from="1587637269657" duration="604000" />
       <workItem from="1587679142041" duration="180000" />
       <workItem from="1587680500155" duration="2409000" />
-      <workItem from="1587683963360" duration="3262000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first commit.">
       <created>1587616033871</created>
@@ -179,14 +179,7 @@
       <option name="project" value="LOCAL" />
       <updated>1587637360691</updated>
     </task>
-    <task id="LOCAL-00004" summary="removed debug staments from contoller.js and added comments">
-      <created>1587684708544</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1587684708544</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,10 +204,13 @@
     <MESSAGE value="This is the first commit." />
     <MESSAGE value="git ignore" />
     <MESSAGE value="Working model, needs more tests." />
-    <MESSAGE value="removed debug staments from contoller.js and added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed debug staments from contoller.js and added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working model, needs more tests." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="459" y="122" key="#Intentions" timestamp="1587693294620">
+      <screen x="0" y="23" width="1680" height="958" />
+    </state>
+    <state x="459" y="122" key="#Intentions/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587693294620" />
     <state x="529" y="222" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587615124419">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
@@ -267,6 +263,10 @@
     <state width="1565" height="122" key="GridCell.Tab.0.right/-1366.23.1366.941/0.23.1680.1027@0.23.1680.1027" timestamp="1587628430282" />
     <state width="1610" height="140" key="GridCell.Tab.0.right/0.23.1680.954@0.23.1680.954" timestamp="1587544957692" />
     <state width="1610" height="140" key="GridCell.Tab.0.right/0.23.1680.956@0.23.1680.956" timestamp="1587539746483" />
+    <state x="187" y="63" key="MergeDialog" timestamp="1587692105041">
+      <screen x="0" y="23" width="1680" height="958" />
+    </state>
+    <state x="187" y="63" key="MergeDialog/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587692105041" />
     <state x="389" y="144" key="SettingsEditor" timestamp="1587611987593">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
@@ -276,10 +276,18 @@
       <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="451" y="268" key="Vcs.Push.Dialog.v2/0.23.1680.956@0.23.1680.956" timestamp="1587637411386" />
+    <state x="653" y="153" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587692567215">
+      <screen x="0" y="23" width="1680" height="958" />
+    </state>
+    <state x="653" y="153" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587692567215" />
     <state x="639" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587637390507">
       <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="639" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.956@0.23.1680.956" timestamp="1587637390507" />
+    <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog" timestamp="1587692093768">
+      <screen x="0" y="23" width="1680" height="958" />
+    </state>
+    <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587692093768" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Assignment_1$server_python3.coverage" NAME="server_python3 Coverage Results" MODIFIED="1587681191430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

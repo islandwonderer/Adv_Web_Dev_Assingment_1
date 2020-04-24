@@ -29,11 +29,24 @@ header:before {
     width: 100vw;
     height: 10vh;
 }
-.header ul li {
+.container .header ul li {
     display: inline-flex;
-    width: 24%;
+
     padding-top: 2rem;
     padding-left: 3rem;
+}
+.container .header #logo {
+    /*float: left;*/
+    width: 10px;
+    height: 8px;
+}
+.header ul li:first-child {
+    padding-left: 75%;
+}
+
+.header ul li:last-child {
+    float: right;
+    padding-right: 5%;
 }
 
 #status-container {
