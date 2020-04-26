@@ -82,22 +82,25 @@ header:before {
     margin: auto auto;
     width: 70%; 
 }
-
+#status-container .btn {
+    margin-right: 5%;
+}
 .btn {
-    /* display: inline-block; */
-    margin-left: 65%;
     margin-top: 1rem;
     border: 2px solid black;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.75rem;
     padding: auto auto;
     border-radius: 5px;
-    width: 20%;
+    width: 12%;
     background: #d6d4e0;
     box-shadow: 2px 2px 2px black;
     height: 2rem;
-}
 
+}
+#first-button {
+    margin-left: 54%;
+}
 
 
 

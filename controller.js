@@ -9,6 +9,10 @@ function updateStatus() {
     document.getElementById("status-input").value = "";
 }
 
+function reset() {
+    document.getElementById("status-input").value = "";
+}
+
 function getJson(url, callback) {
     // this function retires and parses json file, it uses a call back in order to assure that file requested
     // is available before proceeding
@@ -44,7 +48,7 @@ function friendsUpdate() {
             load += `<div class="status-container">
                    
                     <article class="card">
-                        <img src="${friend.picture}" alt=""></img>
+                        <img src="${friend.picture}" alt="">
                     </article>
     
                     <article class="card">
@@ -90,3 +94,4 @@ function friendsUpdate() {
         location.reload()
 
     }
+
