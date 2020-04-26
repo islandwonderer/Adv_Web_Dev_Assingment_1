@@ -35,6 +35,7 @@ without Mark Zuckerberg being any more the wiser.
 * Adding a way to add friends from the web interface (wi).
 * Making it possible to change your user portrait from the wi.
 * Giving it the functional to add pictures of cats (or anything else) to status.
+* Improve image handling, resize, and crop.
 
 ## Disclaimers and Licenses
 This software is a proof of concept. It needs further steps to make it more secure like:
