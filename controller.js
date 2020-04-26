@@ -72,8 +72,7 @@ function friendsUpdate() {
                                 type="submit"
                                 id="like_button"
                                 class="btn"
-                                onclick="updateLike('${friend.feed_id}', '${friend.name}')">
-                                Like</button>
+                                onclick="updateLike('${friend.feed_id}', '${friend.name}')">Like</button>
                             </div>
                         </div>
                     </article>

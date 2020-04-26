@@ -11,8 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="534c9ad4-f891-4b6a-b427-b80d78f65c10" name="Default Changelist" comment="git ignore">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bernard_Shaw_portrait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assembly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/status.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,21 +204,7 @@
       <option name="project" value="LOCAL" />
       <updated>1587860916045</updated>
     </task>
-    <task id="LOCAL-00007" summary="added readme.md">
-      <created>1587866252079</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1587866252079</updated>
-    </task>
-    <task id="LOCAL-00008" summary="removed file">
-      <created>1587873654962</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1587873654962</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,9 +232,7 @@
     <MESSAGE value="working on CSS and HTML" />
     <MESSAGE value="Header corrected." />
     <MESSAGE value="working without refactoring" />
-    <MESSAGE value="added readme.md" />
-    <MESSAGE value="removed file" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed file" />
+    <option name="LAST_COMMIT_MESSAGE" value="working without refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="459" y="122" key="#Intentions" timestamp="1587693294620">
@@ -320,27 +308,21 @@
     </state>
     <state x="389" y="143" key="SettingsEditor/-1366.23.1366.1001/0.23.1680.954@0.23.1680.954" timestamp="1587520184852" />
     <state x="389" y="144" key="SettingsEditor/-1366.23.1366.1001/0.23.1680.960@0.23.1680.960" timestamp="1587611987593" />
-    <state x="451" y="269" key="Vcs.Push.Dialog.v2" timestamp="1587866286771">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state x="451" y="268" key="Vcs.Push.Dialog.v2" timestamp="1587637411386">
+      <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="451" y="268" key="Vcs.Push.Dialog.v2/0.23.1680.956@0.23.1680.956" timestamp="1587637411386" />
-    <state x="451" y="269" key="Vcs.Push.Dialog.v2/0.23.1680.958@0.23.1680.958" timestamp="1587866286771" />
     <state x="653" y="153" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587692567215">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
     <state x="653" y="153" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587692567215" />
-    <state x="639" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587866272675">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state x="639" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587637390507">
+      <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="639" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.956@0.23.1680.956" timestamp="1587637390507" />
-    <state x="639" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.958@0.23.1680.958" timestamp="1587866272675" />
     <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog" timestamp="1587700115990">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
     <state x="530" y="177" key="git4idea.branch.GitSmartOperationDialog/-1366.23.1366.1001/0.23.1680.958@0.23.1680.958" timestamp="1587700115990" />
-    <state x="417" y="284" key="git4idea.merge.GitPullDialog" timestamp="1587873783969">
-      <screen x="0" y="23" width="1680" height="954" />
-    </state>
-    <state x="417" y="284" key="git4idea.merge.GitPullDialog/0.23.1680.954@0.23.1680.954" timestamp="1587873783969" />
   </component>
 </project>

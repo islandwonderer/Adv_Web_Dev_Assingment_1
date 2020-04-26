@@ -176,27 +176,132 @@ header:before {
     width: 5px;
 
 }
-.btn {
-    margin-bottom: 2rem;
-    padding-bottom: 1.25rem;
-    padding-left: 0.8rem;
-    padding-right: 2rem;
-    }
-/*This is out of place*/
-}
 #like_button {
 
     border: 2px solid black;
     font-size: 1rem;
     border-radius: 5px;
-    width: 10%;
+    width: auto;
     background: #d6d4e0;
     box-shadow: 2px 2px 2px black;
     height: 2rem;
+    padding-left: 2.25rem;
+    padding-bottom: 1.7rem;
+    padding-right: 2.25rem;
+}
+@media only screen and (max-width: 500px) {
+    #like_button {
+        font-size: 0.75rem;
+        height: 2rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+        width: auto;
+
+    }
+    .top-row h4:last-child {
+    float: left;
+    }
+    .status-container {
+        width: 90%;
+        padding: 1.25rem 1.5rem;
+        border: 4px double #622569;
+        background: white;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 7px;
+        display: grid;
+        height: 30vh;
+        grid-template-columns: 130px auto;
+        box-shadow: 4px 4px 4px #622569;
+    }
+
+
+    .middle-row p {
+
+    height: 10vh;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    }
+
 
 }
+@media only screen and (max-width: 400px) {
+    #like_button {
+        font-size: 0.75rem;
+        height: 2rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+        width: auto;
+
+    }
+    .top-row h4:last-child {
+    float: left;
+    }
+    .status-container {
+        width: 90%;
+        padding: 1.25rem 1.5rem;
+        border: 4px double #622569;
+        background: white;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 7px;
+        display: grid;
+        height: 40vh;
+        grid-template-columns: 130px auto;
+        box-shadow: 4px 4px 4px #622569;
+    }
+    .middle-row p {
+
+    height: 10vh;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    }
+    .likes-row p {
+        padding-left: 4rem;
+        padding-bottom: 1rem;
+    }
+    .header  ul {
+    position: sticky;
+    top: 0;
+    background: #b8a9c9;
+    width: 100vw;
+    height: 15vh;
+        grid-template-columns: 100px auto;
+    }
+    .header img {
+    height: 80px;
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+    width: 175px;
+    }
+
+    .header ul li:nth-child(2) {
+        padding: auto 1rem;
 
 
+    }
+    .header ul li:nth-child(3) {
+
+    padding: auto 1rem;
+    }
+
+
+
+
+
+
+
+
+
+}
 
 
 
